@@ -10,9 +10,13 @@
     "classnames": "^2.2.5",
     "meteor-node-stubs": "^0.3.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-docgen": "^2.21.0",
+    "react-dom": "^16.2.0",
+    "recast": "^0.15.2"
   },
   "devDependencies": {
-    "eslint": "^4.18.2"
+    "@babel/parser": "^7.0.0-beta.54",
+    "eslint": "^4.18.2",
+    "jsdoc": "^3.5.5"
   }
 }
