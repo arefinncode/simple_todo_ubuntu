@@ -3,16 +3,13 @@
 
 From [`ui/App.js`](ui/App.js)
 
-App component - represents the whole app
+
 
 prop | type | default | required | description
 ---- | :----: | :-------: | :--------: | -----------
-**bar** | `Unknown` | `21` | :x: | 
-**currentUser** | `Object` |  | :x: | Description of prop "currentUser".
-**foo** | `Unknown` | `42` | :x: | 
-**handleSubmit** | `(custom validator)` |  | :x: | Description of prop "handleSubmit" (a custom function).
-**incompleteCount** | `Number` |  | :x: | 
-**tasks** | `Array[]<(custom validator)>` |  | :x: | Description of prop "tasks".
+**currentUser** | `Object` | `undefined` | :x: | "currentUser" not compulsory, but required for some actions.
+**incompleteCount** | `Number` | `0` | :x: | Description of prop "incompleteCount".
+**tasks** | `Array[]<(custom validator)>` | `0` | :x: | Description of prop "tasks".
 
 
 

@@ -10,7 +10,7 @@ import AccountsUIWrapper from './AccountsUIWrapper.js';
 import PropTypes from 'prop-types'; // ES6
 // var PropTypes = require('prop-types'); // ES5 with npm
 
-/**
+/**tasks
  App component - represents the whole app
  */
 class App extends Component {
@@ -111,6 +111,7 @@ class App extends Component {
      COMMENTS BELOW ARE IMPORTANT. CAUSES SOME REMOVING 1 GENERATE OTHER WARNINGS /PROBLEMS. (AREFIN)
       */
         // console.log("Props are in render of ProfilePage",this.props);
+
         this.getDefaultProps(this.props);
         // getDefaultProps(this.props);
 
@@ -149,49 +150,65 @@ class App extends Component {
                     {this.renderTasks()}
                 </ul>
             </div>
-        );
+            );
+        }
     }
-}
 
 App.propTypes = {
+
     /**
-     * Description of prop "currentUser".
+     * "currentUser" not compulsory, but required for some actions.
      */
+
     currentUser: PropTypes.object,
+
+
+
+    // PropTypes.oneOfType([
+    // React.PropTypes.string,
+    // React.PropTypes.instanceOf(Message)
+    // ])
+
+    // currentUser: PropTypes.object,
     // currentUser:PropTypes.object.isRequired,
 
     // not required now.
     //   currentUser: PropTypes.number
     // warning generated in console.
 
-    /*
-         /**
-         * Description of prop "incompleteCount".
-         */
+
+    /**
+     * Description of prop "incompleteCount".
+     */
     incompleteCount: PropTypes.number,
 
     /**
      * Description of prop "tasks".
      */
 
-    tasks: PropTypes.arrayOf(Task), //write works.
+    tasks: PropTypes.arrayOf(Task),
+    // tasks:PropTypes.isRequired,
+
+
+    //write works.
 
     // tasks: PropTypes.number,
 
     /**
      * Description of prop "handleSubmit" (a custom function).
      */
-    handleSubmit: function(event) {
-        // ...event constitues the refs property of react (arefin)
-    },
+    //handleSubmit: function(event) {
+    // ...event constitues the refs property of react (arefin)
+    //  },
 
 
 };
 
 
 App.defaultProps = {
-    foo: 42,
-    bar: 21
+    currentUser: undefined,
+    tasks: 0,
+    incompleteCount:0
 };
 
 
