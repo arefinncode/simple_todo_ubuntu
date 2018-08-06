@@ -1,0 +1,74 @@
+{
+  "imports/ui/AccountsUIWrapper.js": [
+    {
+      "description": "",
+      "displayName": "AccountsUIWrapper",
+      "methods": []
+    }
+  ],
+  "imports/ui/App.js": [
+    {
+      "description": "App component - represents the whole app",
+      "displayName": "App",
+      "methods": [
+        {
+          "name": "handleSubmit",
+          "docblock": "@function This is a description of the handleSubmit function.",
+          "modifiers": [],
+          "params": [
+            {
+              "name": "event"
+            }
+          ],
+          "returns": null,
+          "description": null
+        },
+        {
+          "name": "toggleHideCompleted",
+          "docblock": "@function This is a description of the toggleHideCompleted function.",
+          "modifiers": [],
+          "params": [],
+          "returns": null,
+          "description": null
+        },
+        {
+          "name": "renderTasks",
+          "docblock": "@function  This is a description of the renderTasks function.",
+          "modifiers": [],
+          "params": [],
+          "returns": null,
+          "description": null
+        }
+      ]
+    }
+  ],
+  "imports/ui/Task.js": [
+    {
+      "description": "",
+      "displayName": "Task",
+      "methods": [
+        {
+          "name": "toggleChecked",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        },
+        {
+          "name": "deleteThisTask",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        },
+        {
+          "name": "togglePrivate",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        }
+      ]
+    }
+  ]
+}

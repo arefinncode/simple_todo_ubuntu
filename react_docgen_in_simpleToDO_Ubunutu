@@ -1,0 +1,29 @@
+[
+  {
+    "description": "",
+    "displayName": "Task",
+    "methods": [
+      {
+        "name": "toggleChecked",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "deleteThisTask",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "togglePrivate",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ]
+  }
+]
