@@ -1,0 +1,75 @@
+[
+  {
+    "description": "",
+    "displayName": "App",
+    "methods": [
+      {
+        "name": "handleSubmit",
+        "docblock": "@function This is a description of the handleSubmit function.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event"
+          }
+        ],
+        "returns": null,
+        "description": null
+      },
+      {
+        "name": "toggleHideCompleted",
+        "docblock": "@function This is a description of the toggleHideCompleted function.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": null
+      },
+      {
+        "name": "renderTasks",
+        "docblock": "@function  This is a description of the renderTasks function.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": null
+      }
+    ],
+    "props": {
+      "currentUser": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "\"currentUser\" not compulsory, but required for some actions.",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "incompleteCount": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Description of prop \"incompleteCount\".",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "tasks": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "custom",
+            "raw": "Task"
+          }
+        },
+        "required": false,
+        "description": "Description of prop \"tasks\".",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      }
+    }
+  }
+]

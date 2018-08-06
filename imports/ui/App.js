@@ -112,11 +112,14 @@ class App extends Component {
       */
         // console.log("Props are in render of ProfilePage",this.props);
 
-        this.getDefaultProps(this.props);
+        // this.getDefaultProps(this.props);
         // getDefaultProps(this.props);
 
         //const { label, onClick } = this.props;
+        console.log("All props at bottom are:",this.props);
         //added by arefin as in https://github.com/storybooks/babel-plugin-react-docgen
+
+
 
         return (
             <div className="container">
@@ -150,9 +153,12 @@ class App extends Component {
                     {this.renderTasks()}
                 </ul>
             </div>
-            );
-        }
+
+        );
+
+
     }
+}
 
 App.propTypes = {
 
